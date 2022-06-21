@@ -5,14 +5,26 @@ this.opcao = -1
 
 def Menu():
     print('Menu\n\n'         +
-          '\n1. Exercicio 01'+
-          '\n2. Exercicio 02'+
-          '\n3. Exercicio 03'+
-          '\n4. Exercicio 04'+
-          '\n5. Exercicio 05'+
-          '\n6. Exercicio 06'+
-          '\n7. Exercicio 07'+
-          '\n8. Exercicio 08'+
+          '\n1.  Exercicio 01'+
+          '\n2.  Exercicio 02'+
+          '\n3.  Exercicio 03'+
+          '\n4.  Exercicio 04'+
+          '\n5.  Exercicio 05'+
+          '\n6.  Exercicio 06'+
+          '\n7.  Exercicio 07'+
+          '\n8.  Exercicio 08'+
+          '\n9.  Exercicio 09'+
+          '\n10. Exercicio 10'+
+          '\n11. Exercicio 11'+
+          '\n12. Exercicio 12'+
+          '\n13. Exercicio 13'+
+          '\n14. Exercicio 14'+
+          '\n15. Exercicio 15'+
+          '\n16. Exercicio 16'+
+          '\n17. Exercicio 17'+
+          '\n18. Exercicio 18'+
+          '\n19. Exercicio 19'+
+          '\n20. Exercicio 20'+
           '\n0. Sair'        +
           '\nEscolha uma das opções acima: ')
     this.opcao = int(input())
@@ -58,5 +70,25 @@ def Executar():
             print('Informe a terceira nota')
             n3 = float(input())
             print(ExercicioMoldel.Exercicio08(n1, n2, n3))
+        elif this.opcao == 9:
+            print('Qual a quantidade de maça que vossa senhoria quer comprar')
+            qnt = int(input())
+            print(ExercicioMoldel.Exercicio09(qnt))
+        elif this.opcao == 11:
+            print('Qual salário do vendedor(a)?')
+            sal = float(input())
+            print('Qual o valor de venda do vendedor(a)?')
+            vendas = float(input())
+            print(ExercicioMoldel.Exercicio11(vendas, sal))
+        elif this.opcao == 12:
+            print('Digite o número da sua conta')
+            cont = int(input())
+            print('Qual valor do seu saldo antes dos gastos?')
+            sal = float(input())
+            print('Qual valor gasto em débito?')
+            deb = float(input())
+            print('Qual o valor gasto em crédito?')
+            cred = float(input())
+            print(ExercicioMoldel.Exercicio12(cont, sal, deb, cred))
         else:
             print('Opção informada não é válida')

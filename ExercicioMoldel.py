@@ -53,6 +53,37 @@ def Exercicio08(n1, n2, n3):
     msg = 'A média do aluno(a) é: media = {}'.format(media)
     return msg
 
+def Exercicio09(qnt):
+     if qnt > 0 and qnt < 12:
+         valor = qnt * 1.30
+     else:
+         valor = qnt * 1.00
+     msg = 'O valor do produto é = {}'.format(valor)
+     return msg
+
+def Exercicio11(vendas, sal):
+    if vendas > 0 and vendas <= 1500:
+        sal = (sal * 0.3) + sal
+    elif vendas == 0:
+        sal = sal
+    else:
+        sal = (sal * 0.5) + sal
+    msg = 'O valor do salário do venerdor esse mês é = {}'.format(sal)
+    return msg
+
+def Exercicio12(cont, sal, deb, cred):
+    sal = sal - deb - cred
+    if sal < 0:
+        return 'Saldo NEGATIVO, reveja seus gastos!!!'
+    else:
+        return 'Parabéns, seu saldo é POSITIVO!!!'
+
+def Exercicio13(num):
+    if num < 0 or num > 10:
+        return 'Digite um valor entre 1 e 10!!!!'
+    else:
+       return for x in range (1, 11):
+
 
 
 
